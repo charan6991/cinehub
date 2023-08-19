@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Canvas Example</title>
+</head>
+<body>
+    <canvas id="myCanvas" width="500" height="500"></canvas>
+
+    <script>
+       
+        var canvas = document.getElementById("myCanvas");
+
+        
+        var context = canvas.getContext("2d");
+
+        
+        context.fillStyle = "red";
+
+        
+        context.fillRect(50, 50, 200, 100);
+
+        
+        context.strokeStyle = "blue";
+
+        
+        context.beginPath();
+        context.moveTo(300, 50);
+        context.lineTo(450, 150);
+        context.stroke();
+    </script>
+</body>
+</html>

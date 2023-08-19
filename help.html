@@ -1,0 +1,102 @@
+<html>
+    <head>
+        <title>help Desk</title>
+        <link href = "style.css" rel = "stylesheet">
+        <style>
+            *{
+            color:white;
+            background:black;
+            font-family:sans-serif;
+        }
+        a{
+        text-decoration:none;
+         border:1px solid rgb(100, 74, 74);
+         border-radius:10px;
+         padding:10px;
+         background:rgb(13, 13, 208);
+        }
+        form a:visited {
+         color:red;
+        }
+        .star{
+        color:red;
+    }
+       form{
+        padding-left:10px;
+       }
+        </style>
+    </head>
+
+
+    <body>
+        <div class = "help-top">
+            <div class = "help">
+                <img src = "icon1.png" class = "img">
+                
+            </div>
+            <div class = "help">
+                <span>helpdesk ></span>
+            </div>
+            <div class = "home">
+                <a href = "home.html">home</a>
+            </div>
+            
+            
+        </div>
+
+        <hr color = "blue">
+        <center><h1>Contact us.</h1></center>
+        <div class = "help-form">
+            <form><center>
+                <br><br>
+                <span>your language: </span>
+
+                <select  required = "required" class = "inp-1">
+                    <option>Select Language</option>
+                    <option>English</option>
+                    <option>Telugu</option>
+                    <option>Tamil</option>
+                    <option>Kannada</option>
+                </select><br><br>
+                available languages
+                <a href = "#" class = "select-language">English</a>
+                <a href = "#"  class = "select-language">Telugu</a>
+                <a href = "#"  class = "select-language">Kannada</a>
+                <a href = "#"  class = "select-language">Tamil</a><br><br>
+                <h2>Need more help..........?</h2>
+                <p>Please provide your information to help us contact you___</p>
+                Email/Phone<span  class = "star"> *</span><br>
+                &nbsp&nbsp&nbsp&nbsp<input type = "email" name ="email"   required = "required" placeholder="enter your email / phone here" class = "inp"><br>
+                White is this about ?<span  class = "star"> *</span><br>
+                &nbsp&nbsp&nbsp&nbsp
+                <select  required = "required" class = "inp">
+                    <option>Select about</option>
+                    <option>Account Related</option>
+                    <option>Login Related</option>
+                    <option>Buffering & Quality Related</option>
+                    <option>Seeking Information</option>
+                    <option>Other</option>
+                    <option>Issues with OTP/Password</option>
+                    <option>Subscription Related</option>
+                    <option>Technical</option>
+                </select><br>
+                <span>Describe your issue <span class = "star">*</span></span><br>
+                &nbsp&nbsp&nbsp&nbsp<textarea placeholder ="Please provide your subscribed id and as much information as you can so that we can better assit you. You may attach screenshorts and device/content details to explain your issue better." rows = "20" cols = "100" required = "required"></textarea>
+                <br><br><br>
+                <input type ="file" name = "Attach A file"><br><h3>Attach A File
+                </center>
+                
+                <ul>Conditions:<span  class = "star"> *</span><br>
+                    &nbsp<li>The file should be of type image, video, har.</li>
+                    <li>Please ensure the images are focused on the issues and not blurry.</li>
+                    <li>You can add a maximum of 5 files of the issue. Please ensure the total size of all the files is not above 20MB.</li>
+                </ul>
+                <center>
+                <input type ="submit" name = "Sign in" value = "Submit" id = "ibutton" style = "width:600px"><br>&nbsp<br>
+                
+                </center>
+            </form>
+
+        </div>
+    </body>
+</html>
